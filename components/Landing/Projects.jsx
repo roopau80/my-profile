@@ -10,30 +10,30 @@ import { Pagination, Autoplay } from 'swiper';
 
 
 const Projects = () => {
-  const projects=[{
+  const projects = [{
     img: project1,
     name: "Expense Tracker",
-    tools:"Tools: HTML5, CSS3, Tailwind css, React.js",
-    github_link: "https://github.com/Roopauppar/expensetracker",
-    live_link:  "https://roopauppar.github.io/expensetracker/",
+    tools: "Tools: HTML5, CSS3, Tailwind css, React.js",
+    github_link: "https://github.com/roopau80/expensetracker",
+    live_link: "https://roopau80.github.io/expensetracker/",
   },
   {
     img: project2,
     name: "My Mobile",
-    tools:"Tools: HTML5, CSS3, Tailwind css, React.js, Redux",
-    github_link: "https://github.com/Roopauppar/my-mobile",
-    live_link:  " https://roopauppar.github.io/my-mobile/",
+    tools: "Tools: HTML5, CSS3, Tailwind css, React.js, Redux",
+    github_link: "https://github.com/roopau80/my-mobile",
+    live_link: " https://roopau80.github.io/my-mobile/",
   },
   {
     img: project3,
     name: "Car Service",
-    tools:"Tools: HTML5, CSS3, Javascript, React.js, Bootstrap",
-    github_link: "https://github.com/Roopauppar/carservice-react",
-    live_link:  "https://roopauppar.github.io/carservice-react/",
+    tools: "Tools: HTML5, CSS3, Javascript, React.js, Bootstrap",
+    github_link: "https://github.com/roopau80/car-service",
+    live_link: " https://roopau80.github.io/car-service/",
   },
-  
-]
- return (
+
+  ]
+  return (
     <>
       <section id='projects' className='py-10 text-white'>
         <div className='text-center'>
@@ -42,7 +42,7 @@ const Projects = () => {
               before:bottom-0 before:left-0 before:bg-white
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
               before:transition before:ease-in-out before:duration-300">
-            My <span className='text-cyan-600'>Projects</span>
+              My <span className='text-cyan-600'>Projects</span>
 
             </span>
           </h3>
@@ -68,32 +68,32 @@ const Projects = () => {
               }}
               modules={[Pagination, Autoplay]}
             >
-            {
-              projects.map((project_info,i)=>(
-              <SwiperSlide key={i}>
-                <div className='h-fit w-full p-4 bg-slate-700 rounded-xl'>
-                  <img src={project_info.img} alt='' className='rounded-lg' />
-                  <h3 className='text-xl my-4'>{project_info.name}</h3>
-                  <h6 className='text-sm my-4'>{project_info.tools}</h6>
-                  <div className='flex gap-3'>
-                    <a href={project_info.github_link} target="_blank" className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block'>GitHub</a>
-                    <a href={project_info.live_link}  target="_blank" className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block'>Live Demo</a>
+              {
+                projects.map((project_info, i) => (
+                  <SwiperSlide key={i}>
+                    <div className='h-fit w-full p-4 bg-slate-700 rounded-xl'>
+                      <img src={project_info.img} alt='' className='rounded-lg' />
+                      <h3 className='text-xl my-4'>{project_info.name}</h3>
+                      <h6 className='text-sm my-4'>{project_info.tools}</h6>
+                      <div className='flex gap-3'>
+                        <a href={project_info.github_link} target="_blank" className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block'>GitHub</a>
+                        <a href={project_info.live_link} target="_blank" className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block'>Live Demo</a>
 
-                  </div>
+                      </div>
 
-                </div>
-              </SwiperSlide>
-            ))}
-              
-             
+                    </div>
+                  </SwiperSlide>
+                ))}
+
+
             </Swiper>
           </div>
           <div className='lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm  aboutImg lg:block hidden'>
             <img src={slider_women1} alt='' />
 
-            
+
           </div>
-         
+
         </div>
       </section>
     </>
