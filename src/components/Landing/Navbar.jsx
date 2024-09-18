@@ -50,11 +50,11 @@ const Navbar = () => {
                         </ul>
                     </div>
                     {/* Navbar side bar */}
-                    
-                    <div onClick={()=>setOpen(!open)} className={`z-[999] ${open? "text-gray-900":"text-gray-100"}   text-3xl md:hidden m-5`}>
+
+                    <div onClick={() => setOpen(!open)} className={`z-[999] ${open ? "text-gray-900" : "text-gray-100"}   text-3xl md:hidden m-5`}>
                         <ion-icon name="menu"></ion-icon>
                     </div>
-                    <div className={`md:hidden text-gray-900 absolute w-2/3 h-screen px-7 py-2 font-medium bg-white top-0 duration-300 ${open? 'right-0':'right-[-100%]'}`}>
+                    <div className={`md:hidden text-gray-900 absolute w-2/3 h-screen px-7 py-2 font-medium bg-white top-0 duration-300 ${open ? 'right-0' : 'right-[-100%]'}`}>
                         <ul className='flex flex-col justify-center h-full gap-10 py-2 text-lg'>
                             {
                                 menuLinks?.map((menu, i) => (
