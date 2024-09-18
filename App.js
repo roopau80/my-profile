@@ -10,6 +10,7 @@ import Skills from './components/Landing/Skills';
 import Hireme from './components/Landing/Hireme';
 import Contact from './components/Landing/Contact';
 import Footer from './components/Landing/Footer';
+import FigmaReact from './components/Landing/FigmaReact';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Skills />
       <Hireme />
       <Projects />
+      <FigmaReact/>
       <Contact/>
       <Footer/>
     </>
