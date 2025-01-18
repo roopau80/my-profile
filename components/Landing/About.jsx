@@ -1,5 +1,5 @@
 import React from 'react';
-import resumeUrl from '../../Resume/roopauppar-Resume.pdf'
+import resumeUrl from '../../Resume/roopauppar-cv.pdf'
 import aboutwomen from '../../assets/images/aboutimg2.png';
 // import react_pdf from 'react_pdf';
 
