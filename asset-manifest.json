@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/my-profile/static/css/main.b267868a.css",
-    "main.js": "/my-profile/static/js/main.ad7224b2.js",
+    "main.js": "/my-profile/static/js/main.62e2754d.js",
     "static/js/787.1ed0c42c.chunk.js": "/my-profile/static/js/787.1ed0c42c.chunk.js",
     "static/media/mobile.png": "/my-profile/static/media/mobile.5fca4a09be9f897b3097.png",
     "static/media/car.png": "/my-profile/static/media/car.b2b007b4ab2909189893.png",
-    "static/media/roopauppar-cv.pdf": "/my-profile/static/media/roopauppar-cv.8a63d0017730999d425e.pdf",
     "static/media/aboutimg2.png": "/my-profile/static/media/aboutimg2.54d078dcb5860ffa4b84.png",
     "static/media/edu-removebg-preview.png": "/my-profile/static/media/edu-removebg-preview.11d2a0dc115907c15f6c.png",
     "static/media/expense_tracker.png": "/my-profile/static/media/expense_tracker.796b1afd8453fa4808ce.png",
     "static/media/slider_women1.jpg": "/my-profile/static/media/slider_women1.036cc0f3dae730e21a2b.jpg",
     "static/media/figma-design.png": "/my-profile/static/media/figma-design.9f885f056b6290add100.png",
     "static/media/portfoliowomen.png": "/my-profile/static/media/portfoliowomen.7d9fc026345874799a6c.png",
+    "static/media/roopauppar-Resume.pdf": "/my-profile/static/media/roopauppar-Resume.db594e4cc4372afae125.pdf",
     "static/media/figma-girl2.png": "/my-profile/static/media/figma-girl2.62432e0c2ad79c52c927.png",
     "static/media/bgimg2.jpg": "/my-profile/static/media/bgimg2.ba488036334ec94d2808.jpg",
     "index.html": "/my-profile/index.html",
     "main.b267868a.css.map": "/my-profile/static/css/main.b267868a.css.map",
-    "main.ad7224b2.js.map": "/my-profile/static/js/main.ad7224b2.js.map",
+    "main.62e2754d.js.map": "/my-profile/static/js/main.62e2754d.js.map",
     "787.1ed0c42c.chunk.js.map": "/my-profile/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b267868a.css",
-    "static/js/main.ad7224b2.js"
+    "static/js/main.62e2754d.js"
   ]
 }
