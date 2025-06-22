@@ -7,7 +7,7 @@ const Home = () => {
   const social_media = [
     {
       icons: 'logo-linkedin',
-      live_link: "https://www.linkedin.com/in/roopa-uppar-1901141b3/",
+      live_link: "https://www.linkedin.com/in/roopa-uppar/",
 
     },
     {
@@ -27,7 +27,7 @@ const Home = () => {
     </div> */}
         {/* <div className='wrapper'> */}
         <div className='flex justify-center flex-1 mt-16 space-x-10 '>
-          <div className='relative max-w-full overflow-hidden rounded-lg shadow-2xl  w-80 h-80'>
+          <div className='relative max-w-full overflow-hidden rounded-lg shadow-2xl w-80 h-80'>
             {/* <div className='bubble x8'></div> */}
             <img src={bgimg2} className='absolute inset-0 object-cover w-full h-full' />
             <img src={portfoliowomen} className='absolute inset-0 object-cover w-full h-full ' />
