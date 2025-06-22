@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-profile/static/css/main.b267868a.css",
-    "main.js": "/my-profile/static/js/main.100aa50d.js",
+    "main.js": "/my-profile/static/js/main.245c6b93.js",
     "static/js/787.1ed0c42c.chunk.js": "/my-profile/static/js/787.1ed0c42c.chunk.js",
     "static/media/mobile.png": "/my-profile/static/media/mobile.5fca4a09be9f897b3097.png",
     "static/media/car.png": "/my-profile/static/media/car.b2b007b4ab2909189893.png",
@@ -11,16 +11,16 @@
     "static/media/slider_women1.jpg": "/my-profile/static/media/slider_women1.036cc0f3dae730e21a2b.jpg",
     "static/media/figma-design.png": "/my-profile/static/media/figma-design.9f885f056b6290add100.png",
     "static/media/portfoliowomen.png": "/my-profile/static/media/portfoliowomen.7d9fc026345874799a6c.png",
-    "static/media/roopauppar-cv.pdf": "/my-profile/static/media/roopauppar-cv.07b6beb26927726ab916.pdf",
+    "static/media/roopauppar-cv.pdf": "/my-profile/static/media/roopauppar-cv.df42fa2213a3dc1efac2.pdf",
     "static/media/figma-girl2.png": "/my-profile/static/media/figma-girl2.62432e0c2ad79c52c927.png",
     "static/media/bgimg2.jpg": "/my-profile/static/media/bgimg2.ba488036334ec94d2808.jpg",
     "index.html": "/my-profile/index.html",
     "main.b267868a.css.map": "/my-profile/static/css/main.b267868a.css.map",
-    "main.100aa50d.js.map": "/my-profile/static/js/main.100aa50d.js.map",
+    "main.245c6b93.js.map": "/my-profile/static/js/main.245c6b93.js.map",
     "787.1ed0c42c.chunk.js.map": "/my-profile/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b267868a.css",
-    "static/js/main.100aa50d.js"
+    "static/js/main.245c6b93.js"
   ]
 }
