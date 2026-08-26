@@ -1,49 +1,76 @@
-
-
-import React, { useState, useEffect } from 'react'
-
-
+import React, { useState, useEffect } from "react";
 
 const Bot = () => {
   const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
-    // Show the button when the user scrolls down 100 pixels or more
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 300) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
     };
 
-    // Attach the scroll event listener
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    // Remove the event listener when the component unmounts
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Scroll smoothly to the top
+      behavior: "smooth",
     });
   };
 
   return (
-    <>
-      <button
-        className={`${isVisible ? 'block' : 'hidden'
-          } fixed bottom-5 sm:right-8 animate-bounce right-4 z-[999] cursor-pointer text-white text-4xl bg-cyan-600 w-16 h-16 flex items-center justify-center rounded-full`}
-        onClick={scrollToTop}
-      >
-        <ion-icon name="chevron-up-circle-outline"></ion-icon>
-      </button>
-    </>
+    <button
+      onClick={scrollToTop}
+      aria-label="Scroll to top"
+      className={`
+        fixed
+        bottom-6
+        right-5
+        sm:right-8
+        z-[999]
+        flex
+        items-center
+        justify-center
+        w-12
+        h-12
+        sm:w-14
+        sm:h-14
+        rounded-full
+        text-cyan-400
+        bg-gray-900/90
+        border
+        border-cyan-600/60
+        shadow-lg
+        shadow-cyan-600/10
+        backdrop-blur-sm
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:text-white
+        hover:bg-cyan-600
+        hover:border-cyan-500
+        hover:shadow-cyan-500/30
+        active:scale-90
+        ${isVisible
+          ? "opacity-100 translate-y-0 pointer-events-auto"
+          : "opacity-0 translate-y-5 pointer-events-none"
+        }
+      `}
+    >
+      <ion-icon
+        name="chevron-up-outline"
+        className="text-2xl sm:text-3xl"
+      ></ion-icon>
+    </button>
+  );
+};
 
-  )
-}
-
-export default Bot
+export default Bot;

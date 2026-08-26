@@ -1,87 +1,414 @@
-import React from 'react';
-import portfoliowomen from '../../assets/images/portfoliowomen.png';
-import bgimg2 from '../../assets/images/bgimg2.jpg';
-
+import React from "react";
+import portfoliowomen from "../../assets/images/portfoliowomen.png";
+import bgimg2 from "../../assets/images/bgimg2.jpg";
 
 const Home = () => {
   const social_media = [
     {
-      icons: 'logo-linkedin',
+      icons: "logo-linkedin",
       live_link: "https://www.linkedin.com/in/roopa-uppar-1901141b3/",
-
     },
     {
-      icons: 'logo-github',
+      icons: "logo-github",
       live_link: "https://github.com/Roopauppar",
-    }
-
-  ]
+    },
+  ];
 
   return (
-    <>
-      <section id='home' className='min-h-screen flex py-10 md:flex-row flex-col items-center '>
+    <section
+      id="home"
+      className="
+        relative
+        flex
+        flex-col
+        items-center
+        justify-center
+        min-h-screen
+        px-5
+        py-16
+        overflow-hidden
+        text-white
+        md:flex-row
+        md:px-10
+      "
+    >
 
-        {/* <div className='flex-1 flex items-center justify-center h-full mt-16 space-x-10  realtive  rounded-lg shadow-2xl  overflow-hidden '>
-    <img src={bgimg2} alt='' className='absolute inset-0 h-full  object-cover'></img>
-      <img src={portfoliowomen} alt='' className='md:w-3/4 h-full object-cover mix-blend-darken inset-0 w-full'></img>
-    </div> */}
-        {/* <div className='wrapper'> */}
-        <div className='mt-16 flex-1 flex  justify-center space-x-10  '>
-          <div className=' relative w-80 h-80 max-w-full rounded-lg shadow-2xl overflow-hidden '>
-            {/* <div className='bubble x8'></div> */}
-            <img src={bgimg2} className='absolute inset-0 w-full h-full object-cover' />
-            <img src={portfoliowomen} className=' absolute inset-0 w-full h-full object-cover' />
-            {/* <div className='bubble x1'></div> */}
+      {/* ================= Background Glow ================= */}
 
-          </div>
+      <div
+        className="
+          absolute
+          top-20
+          left-10
+          w-72
+          h-72
+          rounded-full
+          bg-cyan-600/10
+          blur-3xl
+        "
+      ></div>
+
+      <div
+        className="
+          absolute
+          bottom-10
+          right-10
+          w-64
+          h-64
+          rounded-full
+          bg-cyan-600/10
+          blur-3xl
+        "
+      ></div>
+
+      {/* ================= Profile Image ================= */}
+
+      <div
+        className="
+          relative
+          z-10
+          flex
+          items-center
+          justify-center
+          flex-1
+          w-full
+          mt-10
+          md:mt-0
+        "
+      >
+
+        {/* Outer Glow */}
+        <div
+          className="
+            absolute
+            w-64
+            h-64
+            sm:w-72
+            sm:h-72
+            md:w-80
+            md:h-80
+            rounded-full
+            bg-cyan-500/20
+            blur-3xl
+          "
+        ></div>
+
+        {/* Decorative Circle */}
+        <div
+          className="
+            absolute
+            w-72
+            h-72
+            sm:w-80
+            sm:h-80
+            md:w-[22rem]
+            md:h-[22rem]
+            rounded-full
+            border
+            border-cyan-500/20
+          "
+        ></div>
+
+        {/* Image Container */}
+        <div
+          className="
+            relative
+            w-64
+            h-64
+            sm:w-72
+            sm:h-72
+            md:w-80
+            md:h-80
+            overflow-hidden
+            rounded-full
+            border-2
+            border-cyan-600/50
+            shadow-2xl
+            shadow-cyan-600/10
+          "
+        >
+
+          {/* Background Image */}
+          <img
+            src={bgimg2}
+            alt=""
+            className="
+              absolute
+              inset-0
+              object-cover
+              w-full
+              h-full
+            "
+          />
+
+          {/* Profile Image */}
+          <img
+            src={portfoliowomen}
+            alt="Roopa Uppar"
+            className="
+              absolute
+              inset-0
+              object-contain
+              w-full
+              h-full
+              transition-transform
+              duration-500
+              hover:scale-105
+            "
+          />
 
         </div>
 
-        <div className='flex-1'>
-          <div className='md:text-left text-center mt-4'>
-            {/* <div className='bubble x2'></div> */}
-            <h1 className='md:text-4xl text-2xl md:leading-normal leading-10 text-white font-bold'>
-              {/* <div className='bubble x9'></div> */}
-              <span className='text-cyan-600 md:text-5xl text-4xl'>
-                Hello!
-                <br />
-                {/* <div className='bubble x3'></div> */}
-              </span>
-              My Name is <span>Roopa Uppar</span>
+        {/* Decorative Dots */}
 
-            </h1>
-            <h4 className='md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600'>Frontend Developer(React js)</h4>
-            {/* <div className='bubble x4'></div> */}
+        <span
+          className="
+            absolute
+            top-8
+            right-8
+            w-3
+            h-3
+            rounded-full
+            bg-cyan-500
+            shadow-lg
+            shadow-cyan-500/50
+          "
+        ></span>
 
-            {/* <button  className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <span
+          className="
+            absolute
+            bottom-8
+            left-8
+            w-2
+            h-2
+            rounded-full
+            bg-cyan-400
+          "
+        ></span>
+
+      </div>
+
+      {/* ================= Hero Content ================= */}
+
+      <div
+        className="
+          relative
+          z-10
+          flex-1
+          w-full
+          mt-10
+          md:mt-0
+        "
+      >
+
+        <div
+          className="
+            max-w-xl
+            mx-auto
+            text-center
+            md:mx-0
+            md:text-left
+          "
+        >
+
+          {/* Greeting */}
+
+          <p
+            className="
+              text-lg
+              font-medium
+              text-gray-400
+              sm:text-xl
+            "
+          >
+            Hello, I'm
+          </p>
+
+          {/* Name */}
+
+          <h1
+            className="
+              mt-2
+              text-4xl
+              font-bold
+              leading-tight
+              sm:text-5xl
+              lg:text-6xl
+            "
+          >
+            Roopa{" "}
+            <span className="text-cyan-600">
+              Uppar
+            </span>
+          </h1>
+
+          {/* Role */}
+
+          <h2
+            className="
+              mt-4
+              text-xl
+              font-semibold
+              text-gray-300
+              sm:text-2xl
+            "
+          >
+            Frontend Developer
+          </h2>
+
+          {/* Technologies */}
+
+          <p
+            className="
+              mt-2
+              text-sm
+              font-medium
+              text-cyan-500
+              sm:text-base
+            "
+          >
+            React.js · JavaScript · HTML5 · CSS3
+          </p>
+
+          {/* Description */}
+
+          <p
+            className="
+              max-w-lg
+              mt-5
+              text-sm
+              leading-7
+              text-gray-400
+              sm:text-base
+            "
+          >
+            I build responsive and user-friendly web applications
+            using modern frontend technologies, with a focus on clean
+            interfaces and engaging user experiences.
+          </p>
+
+          {/* Buttons */}
+
+          <div
+            className="
+              flex
+              flex-wrap
+              items-center
+              justify-center
+              gap-4
+              mt-7
+              md:justify-start
+            "
+          >
+
+            {/* View Projects */}
+
+            <a
+              href="#projects"
+              className="
+                px-6
+                py-3
+                text-sm
+                font-semibold
+                text-gray-900
+                bg-cyan-500
+                rounded-full
+                transition-all
+                duration-300
+                hover:bg-cyan-400
+                hover:shadow-lg
+                hover:shadow-cyan-500/20
+                active:scale-95
+              "
+            >
+              View Projects
+            </a>
+
+            {/* Contact */}
+
+            <a
+              href="#contact"
+              className="
+                px-6
+                py-3
+                text-sm
+                font-semibold
+                text-cyan-400
+                bg-transparent
+                border
+                border-cyan-600
+                rounded-full
+                transition-all
+                duration-300
+                hover:bg-cyan-600
+                hover:text-white
+                active:scale-95
+              "
+            >
               Contact Me
-            </button> */}
-            <div className='mt-2 text-2xl flex md:justify-start justify-center gap-5'>
-              {/* <div className='bubble x5'></div> */}
-              {
-                social_media?.map(social_link => (
-                  <>
-                    <div key={social_link} className='text-gray-600 hover:text-white cursor-pointer'>
-                      {/* <div className='bubble x6'></div> */}
-                      <div className='flex gap-3'>
-                        <a href={social_link.live_link} target="_blank" ><ion-icon name={social_link.icons}></ion-icon></a>
-                        {/* <div className='bubble x10'></div> */}
-                        {/* <div className='bubble x7'></div> */}
+            </a>
 
-                      </div>
-                    </div>
-                  </>
-                ))
-              }
-              
-            </div>
           </div>
+
+          {/* ================= Social Media ================= */}
+
+          <div
+            className="
+              flex
+              items-center
+              justify-center
+              gap-4
+              mt-8
+              md:justify-start
+            "
+          >
+
+            <span className="text-sm text-gray-500">
+              Connect with me
+            </span>
+
+            {social_media.map((social_link, index) => (
+              <a
+                key={index}
+                href={social_link.live_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={
+                  social_link.icons === "logo-linkedin"
+                    ? "LinkedIn"
+                    : "GitHub"
+                }
+                className="
+                  flex
+                  items-center
+                  justify-center
+                  w-10
+                  h-10
+                  text-xl
+                  text-gray-400
+                  bg-gray-800/70
+                  border
+                  border-gray-700
+                  rounded-full
+                  transition-all
+                  duration-300
+                  hover:text-cyan-400
+                  hover:border-cyan-600
+                  hover:-translate-y-1
+                "
+              >
+                <ion-icon name={social_link.icons}></ion-icon>
+              </a>
+            ))}
+
+          </div>
+
         </div>
-        {/* </div> */}
-      </section>
+      </div>
 
-    </>
-  )
-}
+    </section>
+  );
+};
 
-export default Home
+export default Home;
